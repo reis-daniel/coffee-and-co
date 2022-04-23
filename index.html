@@ -8,40 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&family=Special+Elite&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="fixed-background-img">
-      <header class="header">
-        <nav class="navbar">
-          <ul>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#menu-link">Menu</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#story-link">Story</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#catering-link">Catering</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#cakes-link">Cakes</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#contact-link">Contact</a>
-            </li>
-          </ul>
-          <div class="homepage-container">
-            <div class="homepage background-img">
-              <h1 class="primary-headline">
-                <span class="num-styling">11</span>Coffee & Co.
-              </h1>
-            </div>
-            <div class="homepage background-img">
-              <h2 class="secondary-headline">HELLO!</h2>
+    <div class="fixed-background-img"></div>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#menu-link">Menu</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#story-link">Story</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#catering-link">Catering</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#cakes-link">Cakes</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#contact-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="homepage-container">
+        <div class="homepage background-img">
+          <img
+            class="company-name-img"
+            src="./assets/img/tb_eleven.png"
+            alt="number 11 and company name"
+          />
+        </div>
+        <div class="introduction background-img">
+          <div class="content">
+            <h1 class="primary-headline">HELLO!</h1>
+            <div class="text-container">
               <p class="text-p">
                 We are more than your normal coffee shop; we are a part of your
                 everyday lives. Our passion and love of home-cooked meal is
@@ -57,51 +62,66 @@
               </p>
             </div>
           </div>
-        </nav>
-      </header>
-      <main class="main">
-        <article id="menu-link" class="menu">
-          <div class="content-container background-img">
+        </div>
+      </div>
+      <button class="goTop-Button" id="goTop" onclick="topFunction()">
+        up
+      </button>
+    </header>
+    <main class="main">
+      <article id="menu-link" class="menu">
+        <div class="artikel-container menu background-img">
+          <div class="content">
             <h2 class="secondary-headline">OUR MENU</h2>
             <div class="menu-icon">
-              <img src="./assets/img/" alt="" />Full Menu
+              <img
+                class="toast-icon"
+                src="./assets/img/toast_icon.png"
+                alt="icon of two toasts"
+              />
+              <p>Full Menu</p>
             </div>
-
             <div class="daily-brews">
               <h3 class="content-headline">DAILY BREWS</h3>
               <div class="brew-details">
-                <h4 class="small-headline">BOTTOMLESS BROWN</h4>
-                <p>
-                  100% Columbian - organic certified, medium roasted, free
-                  in-house refills or large take-out
-                </p>
-              </div>
-              <div class="brew-details">
-                <h4 class="small-headline">CAFE AU LAIT</h4>
-                <p>Columbian roast coffee + steamed milk</p>
+                <div class="brew">
+                  <h4 class="small-headline">BOTTOMLESS BROWN</h4>
+                  <p>
+                    100% Columbian - organic certified, medium roasted, free
+                    in-house refills or large take-out
+                  </p>
+                </div>
+                <div class="brew">
+                  <h4 class="small-headline">CAFE AU LAIT</h4>
+                  <p>Columbian roast coffee + steamed milk</p>
+                </div>
               </div>
             </div>
             <div class="handmade-coffees">
               <h3 class="content-headline">HANDMADE COFFEES</h3>
               <div class="coffee-details">
-                <h4 class="small-headline">FRENCH PRESS</h4>
-                <p>
-                  see our coffee tab for more information on our single origin
-                  coffee selections
-                </p>
-              </div>
-              <div class="coffee-details">
-                <h4 class="small-headline">CHEMEX POUR OVER</h4>
-                <p>
-                  see our coffee tab for more information on our single origin
-                  coffee selections
-                </p>
+                <div class="coffee">
+                  <h4 class="small-headline">FRENCH PRESS</h4>
+                  <p>
+                    see our coffee tab for more information on our single origin
+                    coffee selections
+                  </p>
+                </div>
+                <div class="coffee">
+                  <h4 class="small-headline">CHEMEX POUR OVER</h4>
+                  <p>
+                    see our coffee tab for more information on our single origin
+                    coffee selections
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </article>
-        <article id="story-link" class="story">
-          <div class="content-container">
+        </div>
+      </article>
+      <article id="story-link" class="story">
+        <div class="artikel-container story">
+          <div class="content">
             <div class="text-container">
               <h3 class="content-headline">OUR STORY</h3>
               <p class="text-p">
@@ -119,12 +139,23 @@
                 on site and served immediately to our guests.
               </p>
             </div>
-            <div class="img-styling"><img src="./assets/img/" alt="" /></div>
+            <img
+              class="story-img"
+              src="./assets/img/paper.png"
+              alt="caffee in a red mug with caffee art and a video-play foreground"
+            />
           </div>
-        </article>
-        <article id="catering-link" class="catering">
-          <div class="content-container">
-            <img src="./assets/img/" alt="" />
+        </div>
+      </article>
+      <div class="fixed-img bg-catering"></div>
+      <article id="catering-link" class="catering">
+        <div class="artikel-container catering background-img">
+          <div class="content">
+            <img
+              class="catering-img"
+              src="./assets/img/catering_2.jpg"
+              alt=""
+            />
             <div class="text-container">
               <h3 class="content-headline">CATERING SERVICES</h3>
               <p class="text-p">
@@ -143,10 +174,13 @@
               <a class="article-link" href="#">Party Menu</a>
             </div>
           </div>
-        </article>
-        <article id="cakes-link" class="cakes">
-          <div class="content-container">
-            <img src="./assets/img/" alt="" />
+        </div>
+      </article>
+      <div class="fixed-img bg-cakes"></div>
+      <article id="cakes-link" class="cakes">
+        <div class="artikel-container cakes background-img">
+          <div class="content">
+            <img class="cake-img" src="./assets/img/food_10.jpg" alt="" />
             <div class="text-container">
               <h3 class="content-headline">OUR CAKES</h3>
               <p class="text-p">
@@ -158,18 +192,30 @@
               <a class="article-link" href="#">Get in Touch</a>
             </div>
           </div>
-        </article>
-      </main>
-      <footer class="footer">
-        <div class="footer-content white-font">
-          <h4 class="small-headline">11 Coffee & Co.</h4>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="footer-content black-bg white-font">
+        <h4 class="small-headline">11 Coffee & Co.</h4>
+        <div>
           <p class="text-p">Copyright © 2015-20. All rights reserved.</p>
           <p class="text-p">Video & Photography by Momo Pixel</p>
-          <img src="" alt="" class="social-media-icon" />
-          <img src="" alt="" class="social-media-icon" />
-          <h5 class="special-headline">TODAY</h5>
         </div>
-      </footer>
-    </div>
+        <img
+          src="./assets/img/instagram_w.png"
+          alt="instagram social media icon"
+          class="social-media-icon"
+        />
+        <img
+          src="./assets/img/twitter.png"
+          alt="twitter social media icon"
+          class="social-media-icon"
+        />
+        <h5 class="special-headline">TODAY</h5>
+      </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
