@@ -55,6 +55,10 @@ article[id$="-link"] {
   margin-top: 45vh;
 }
 
+img {
+  object-fit: contain;
+}
+
 /* Hintergrund-Bilder der: Homepage und Artikel */
 .background-img {
   background-position: center;
@@ -149,6 +153,7 @@ article[id$="-link"] {
   position: fixed;
   z-index: -1;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-position: center;
@@ -200,7 +205,7 @@ article .content {
 }
 
 .toast-icon {
-  height: var(--font-sz-secondary);
+  height: 3rem;
 }
 
 .daily-brews,
@@ -340,4 +345,31 @@ article .content {
 .footer-content img {
   height: 2rem;
   width: 2rem;
+}
+
+/* Additional Styling */
+
+.navbar-scrolled {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 100%;
+}
+
+.goTop-Button {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  position: fixed;
+  padding-bottom: 4px;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-style: none;
+  background-color: var(--clr-secondary-wh);
+  border-radius: 0.85rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  color: var(--clr-primary-bl);
+  text-align: center;
 }

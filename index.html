@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="fixed-background-img bg-menu"></div>
+    <div class="fixed-background-img"></div>
     <header class="header">
       <nav class="navbar">
         <ul class="navbar-list">
@@ -64,8 +64,10 @@
           </div>
         </div>
       </div>
+      <button class="goTop-Button" id="goTop" onclick="topFunction()">
+        up
+      </button>
     </header>
-
     <main class="main">
       <article id="menu-link" class="menu">
         <div class="artikel-container menu background-img">
@@ -145,6 +147,7 @@
           </div>
         </div>
       </article>
+      <div class="fixed-img bg-catering"></div>
       <article id="catering-link" class="catering">
         <div class="artikel-container catering background-img">
           <div class="content">
@@ -173,6 +176,7 @@
           </div>
         </div>
       </article>
+      <div class="fixed-img bg-cakes"></div>
       <article id="cakes-link" class="cakes">
         <div class="artikel-container cakes background-img">
           <div class="content">
@@ -211,5 +215,7 @@
         <h5 class="special-headline">TODAY</h5>
       </div>
     </footer>
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
