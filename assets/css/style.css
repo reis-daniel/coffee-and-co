@@ -1,3 +1,5 @@
+/* Allgemeines Styling des HTML Documents */
+
 #farben-tester {
   color: #000, #fff;
 }
@@ -5,12 +7,36 @@
 :root {
   --clr-primary-bl: #000;
   --clr-secondary-wh: #fff;
+  --font-primary: "Special Elite", cursive;
+  --font-secondary: "Exo", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Special Elite", cursive;
+  font-family: var(--font-primary);
   color: var(--clr-primary-bl);
+}
+
+/* Hintergrund-Bilder der: Homepage und Artikel */
+.background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage.background-img {
+  background-image: url("../img/bg.jpeg");
+}
+.introduction.background-img {
+  background-image: url("../img/beans_icon.png");
+}
+.menu.background-img {
+  background-image: url("../img/cake_icon.png");
+}
+.catering.background-img {
+  background-image: url("../img/pie_icon.png");
+}
+.cakes.background-img {
+  background-image: url("../img/muffin_icon.png");
 }
