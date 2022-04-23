@@ -52,7 +52,7 @@ article[id$="-link"] {
 }
 
 article[id$="-link"] {
-  margin-top: 45vh;
+  margin-top: 50vh;
 }
 
 img {
@@ -71,23 +71,23 @@ img {
 }
 .homepage.background-img {
   background-image: url("../img/bg.jpeg");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 .introduction.background-img {
   background-image: url("../img/beans_icon.png");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 .menu.background-img {
   background-image: url("../img/cake_icon.png");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 .catering.background-img {
   background-image: url("../img/pie_icon.png");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 .cakes.background-img {
   background-image: url("../img/muffin_icon.png");
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 /* Header: Navbar Styling */
@@ -179,7 +179,11 @@ img {
   background-image: url("../img/bridge_3.jpg");
 }
 .bg-cakes {
-  background-image: url("../img/bridge_4.jpg");
+  background-image: url("../img/bridge_4.jpeg");
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 /* Main: Artikel Styling */
@@ -194,6 +198,18 @@ article .content {
   padding: 3rem;
 }
 
+.article-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  border: 0.15rem solid var(--clr-primary-bl);
+  text-decoration: none;
+  padding: 0.25rem;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}
+
 /* Main: Menu Styling */
 
 .menu .content {
@@ -203,7 +219,7 @@ article .content {
   max-width: 40vw;
   gap: 2rem;
   width: 35%;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .menu-icon {
@@ -253,7 +269,7 @@ article .content {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .story .content {
@@ -279,7 +295,7 @@ article .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .catering .content {
@@ -305,7 +321,7 @@ article .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .cakes .content {
@@ -332,7 +348,7 @@ article .content {
 
 .footer {
   background-color: var(--clr-primary-bl);
-  padding-top: 2rem;
+  padding: 2rem 0 1rem;
 }
 
 .footer-content.white-font h4,
