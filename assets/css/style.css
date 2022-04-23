@@ -13,7 +13,7 @@
   --font-sz-primary: 4rem;
   --font-sz-secondary: 3.5rem;
   --font-sz-content: 2.5rem;
-  --font-sz-small: 1rem;
+  --font-sz-small: 1.8rem;
 }
 
 * {
@@ -126,16 +126,15 @@ article[id$="-link"] {
 }
 
 /* Header: Introduction Styling */
-.introduction {
-  min-height: 35vh;
-}
 
 .header .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   padding: 7rem;
   max-width: 40vw;
+  min-height: 50vh;
   gap: 2rem;
 }
 
@@ -150,9 +149,8 @@ article[id$="-link"] {
   position: fixed;
   z-index: -1;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,13 +178,19 @@ article[id$="-link"] {
 
 article .content {
   display: flex;
+  padding: 3rem;
+}
+
+/* Main: Menu Styling */
+
+.menu .content {
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  justify-content: center;
   max-width: 40vw;
   gap: 2rem;
-  width: 30%;
-  background-color: red;
+  width: 35%;
+  min-height: 100vh;
 }
 
 .menu-icon {
@@ -204,7 +208,7 @@ article .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0.9rem;
   width: 100%;
 }
 
@@ -214,6 +218,7 @@ article .content {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .brew,
@@ -221,9 +226,118 @@ article .content {
   text-align: center;
   border: 0.075rem solid var(--clr-primary-bl);
   padding: 1rem;
-  min-width: 100%;
-  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.brew {
+/* Main: Story Styling */
+
+.story .content {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5rem;
+  width: 60%;
+  padding: 6rem 0;
+}
+
+.story-img {
+  height: 16rem;
+}
+
+.story .text-container {
+  max-width: 50%;
+}
+
+/* Main: Catering Styling */
+
+.artikel-container.catering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.catering .content {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5rem;
+  width: 60%;
+  padding: 6rem 0;
+}
+
+.catering-img {
+  height: 16rem;
+}
+
+.catering .text-container {
+  max-width: 50%;
+}
+
+/* Main: Cake Styling */
+
+.artikel-container.cakes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.cakes .content {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  width: 60%;
+  padding: 6rem 0;
+}
+
+.cake-img {
+  height: 16rem;
+}
+
+.cakes .text-container {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Footer: Styling */
+
+.footer {
+  background-color: var(--clr-primary-bl);
+  padding-top: 2rem;
+}
+
+.footer-content.white-font h4,
+.footer-content.white-font p,
+.footer-content.white-font h5 {
+  color: var(--clr-secondary-wh);
+}
+
+.footer-content.white-font p {
+  font-size: 1.25rem;
+}
+
+.footer-content.white-font h5 {
+  font-size: 3rem;
+  color: yellow;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content img {
+  height: 2rem;
+  width: 2rem;
 }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <div class="fixed-background-img bg-menu"></div>
     <header class="header">
       <nav class="navbar">
         <ul class="navbar-list">
@@ -64,7 +65,7 @@
         </div>
       </div>
     </header>
-    <div class="fixed-background-img bg-menu"></div>
+
     <main class="main">
       <article id="menu-link" class="menu">
         <div class="artikel-container menu background-img">
@@ -119,8 +120,8 @@
       <article id="story-link" class="story">
         <div class="artikel-container story">
           <div class="content">
-            <h3 class="content-headline">OUR STORY</h3>
             <div class="text-container">
+              <h3 class="content-headline">OUR STORY</h3>
               <p class="text-p">
                 I started my first coffee shop in 2004 in Hampstead Garden
                 Suburbs after deciding to give up my 9 to 5 job in the city.
@@ -137,6 +138,7 @@
               </p>
             </div>
             <img
+              class="story-img"
               src="./assets/img/paper.png"
               alt="caffee in a red mug with caffee art and a video-play foreground"
             />
@@ -146,7 +148,11 @@
       <article id="catering-link" class="catering">
         <div class="artikel-container catering background-img">
           <div class="content">
-            <img src="./assets/img/catering_2.jpg" alt="" />
+            <img
+              class="catering-img"
+              src="./assets/img/catering_2.jpg"
+              alt=""
+            />
             <div class="text-container">
               <h3 class="content-headline">CATERING SERVICES</h3>
               <p class="text-p">
@@ -170,7 +176,7 @@
       <article id="cakes-link" class="cakes">
         <div class="artikel-container cakes background-img">
           <div class="content">
-            <img src="./assets/img/food_10.jpg" alt="" />
+            <img class="cake-img" src="./assets/img/food_10.jpg" alt="" />
             <div class="text-container">
               <h3 class="content-headline">OUR CAKES</h3>
               <p class="text-p">
@@ -188,8 +194,10 @@
     <footer class="footer">
       <div class="footer-content black-bg white-font">
         <h4 class="small-headline">11 Coffee & Co.</h4>
-        <p class="text-p">Copyright © 2015-20. All rights reserved.</p>
-        <p class="text-p">Video & Photography by Momo Pixel</p>
+        <div>
+          <p class="text-p">Copyright © 2015-20. All rights reserved.</p>
+          <p class="text-p">Video & Photography by Momo Pixel</p>
+        </div>
         <img
           src="./assets/img/instagram_w.png"
           alt="instagram social media icon"
