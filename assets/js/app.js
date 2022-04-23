@@ -2,38 +2,41 @@
 let goTopButton = document.querySelector(".goTop-Button");
 let navbar = document.querySelector(".navbar");
 let navbarLinks = document.querySelectorAll("nav-link");
-let menuArt = document.querySelector(".menu");
-let storyArt = document.querySelector(".story");
-let cateringArt = document.querySelector(".catering");
-let cakesArt = document.querySelector(".cakes");
+
+// Change Background-Image when scrolling
+let menuArt = document.querySelector("article.menu");
+let storyArt = document.querySelector("article.story");
+let cateringArt = document.querySelector("article.catering");
+let cakesArt = document.querySelector("article.cakes");
 let menuPos = menuArt.getBoundingClientRect();
 let storyPos = storyArt.getBoundingClientRect();
 let cateringPos = cateringArt.getBoundingClientRect();
 let cakesPos = cakesArt.getBoundingClientRect();
-let bgImg = document.querySelector(".fixed-background-img");
-let tester = document.querySelector(".menu.background-img");
-let testerPos = tester.getBoundingClientRect();
+let bgImg = document.querySelector("#bg-image");
+let fixedClass = "fixed-background-img";
+
+// Scroll top when reloading the page..
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+  clearBackgroundClass();
+};
 
 // Functions
-
-console.log(testerPos.top);
-console.log(testerPos.top - window.innerHeight);
-
-window.addEventListener("scroll", (event) => {
-  let scroll = this.scrollY;
-  if (scroll >= menuPos.top - window.innerHeight) {
-    bgImg.classList.add("bg-menu");
-  }
-  console.log(scroll);
-});
-
 function topFunction() {
   document.documentElement.scrollTop = 0;
+  clearBackgroundClass();
 }
 
+function clearBackgroundClass() {
+  bgImg.className = fixedClass;
+  bgImg.classList.add("bg-menu");
+}
+
+// Invoke stickynavbar-Function when scrolling
 window.onscroll = function () {
   functionStickyNavbar();
 };
+
 let sticky = navbar.offsetTop;
 
 function functionStickyNavbar() {
@@ -51,3 +54,27 @@ function functionStickyNavbar() {
     }
   }
 }
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+
+  //   Menü -> bg-story
+  if (scroll >= menuPos.top) {
+    bgImg.className = fixedClass;
+    bgImg.classList.add("bg-story");
+  }
+  // Story -> bg-catering
+  if (scroll >= storyPos.top) {
+    bgImg.className = fixedClass;
+    bgImg.classList.add("bg-catering");
+  }
+  // Catering -> bg-cakes
+  if (scroll >= cateringPos.top) {
+    bgImg.className = fixedClass;
+    bgImg.classList.add("bg-cakes");
+  }
+
+  if (scroll >= cakesPos.top) {
+    bgImg.className = "bg-black";
+  }
+});

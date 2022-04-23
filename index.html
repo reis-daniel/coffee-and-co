@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="fixed-background-img"></div>
+    <div id="bg-image" class="fixed-background-img bg-menu"></div>
     <header class="header">
       <nav class="navbar">
         <ul class="navbar-list">
@@ -79,7 +79,7 @@
                 src="./assets/img/toast_icon.png"
                 alt="icon of two toasts"
               />
-              <p>Full Menu</p>
+              <a href="#">Full Menu</a>
             </div>
             <div class="daily-brews">
               <h3 class="content-headline">DAILY BREWS</h3>
@@ -171,7 +171,7 @@
                 events and galleries to weddings, we can cater to make a
                 memorable experience for everyone involved.
               </p>
-              <a class="article-link" href="#">Party Menu</a>
+              <div><a class="article-link" href="#">Party Menu</a></div>
             </div>
           </div>
         </div>
@@ -189,33 +189,34 @@
                 option on display for those guests with special dietary
                 requirements.
               </p>
-              <a class="article-link" href="#">Get in Touch</a>
+              <div><a class="article-link" href="#">Get in Touch</a></div>
             </div>
           </div>
         </div>
       </article>
     </main>
     <footer class="footer">
-      <div class="footer-content black-bg white-font">
+      <div id="contact-link" class="footer-content black-bg white-font">
         <h4 class="small-headline">11 Coffee & Co.</h4>
         <div>
           <p class="text-p">Copyright © 2015-20. All rights reserved.</p>
           <p class="text-p">Video & Photography by Momo Pixel</p>
         </div>
-        <img
-          src="./assets/img/instagram_w.png"
-          alt="instagram social media icon"
-          class="social-media-icon"
-        />
-        <img
-          src="./assets/img/twitter.png"
-          alt="twitter social media icon"
-          class="social-media-icon"
-        />
+        <a href="http://www.instagram.com" target="_blank">
+          <img
+            src="./assets/img/instagram_w.png"
+            alt="instagram social media icon"
+            class="social-media-icon"
+        /></a>
+        <a href="http://twitter.com" target="_blank">
+          <img
+            src="./assets/img/twitter.png"
+            alt="twitter social media icon"
+            class="social-media-icon"
+        /></a>
         <h5 class="special-headline">TODAY</h5>
       </div>
     </footer>
-
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
