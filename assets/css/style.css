@@ -61,6 +61,10 @@ img {
 
 /* Hintergrund-Bilder der: Homepage und Artikel */
 .background-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,15 +75,19 @@ img {
 }
 .introduction.background-img {
   background-image: url("../img/beans_icon.png");
+  min-height: 100vh;
 }
 .menu.background-img {
   background-image: url("../img/cake_icon.png");
+  min-height: 100vh;
 }
 .catering.background-img {
   background-image: url("../img/pie_icon.png");
+  min-height: 100vh;
 }
 .cakes.background-img {
   background-image: url("../img/muffin_icon.png");
+  min-height: 100vh;
 }
 
 /* Header: Navbar Styling */
@@ -240,17 +248,25 @@ article .content {
 
 /* Main: Story Styling */
 
+.artikel-container.story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .story .content {
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
   gap: 5rem;
-  width: 60%;
+  width: 80%;
   padding: 6rem 0;
 }
 
 .story-img {
-  height: 16rem;
+  height: 20%;
 }
 
 .story .text-container {
@@ -263,7 +279,7 @@ article .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 .catering .content {
@@ -289,7 +305,7 @@ article .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 .cakes .content {
