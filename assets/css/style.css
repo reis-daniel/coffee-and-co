@@ -9,6 +9,11 @@
   --clr-secondary-wh: #fff;
   --font-primary: "Special Elite", cursive;
   --font-secondary: "Exo", sans-serif;
+  --font-sz-big: 1.75rem;
+  --font-sz-primary: 4rem;
+  --font-sz-secondary: 3.5rem;
+  --font-sz-content: 2.5rem;
+  --font-sz-small: 1rem;
 }
 
 * {
@@ -19,6 +24,37 @@
   color: var(--clr-primary-bl);
 }
 
+[class$="headline"] {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: var(--font-sz-primary);
+}
+
+.secondary-headline {
+  font-size: var(--font-sz-primary);
+}
+
+.content-headline {
+  font-size: var(--font-sz-content);
+}
+
+.small-headline {
+  font-size: var(--font-sz-small);
+}
+
+p {
+  font-size: var(--font-sz-small);
+}
+
+.header,
+article[id$="-link"] {
+  background-color: var(--clr-secondary-wh);
+}
+
+article[id$="-link"] {
+  margin-top: 45vh;
+}
+
 /* Hintergrund-Bilder der: Homepage und Artikel */
 .background-img {
   background-position: center;
@@ -27,6 +63,7 @@
 }
 .homepage.background-img {
   background-image: url("../img/bg.jpeg");
+  min-height: 100vh;
 }
 .introduction.background-img {
   background-image: url("../img/beans_icon.png");
@@ -39,4 +76,154 @@
 }
 .cakes.background-img {
   background-image: url("../img/muffin_icon.png");
+}
+
+/* Header: Navbar Styling */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3.75rem;
+  font-size: 0.9rem;
+  background-color: var(--clr-secondary-wh);
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  min-width: 35%;
+  list-style-type: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+/* Header: Homepage Styling */
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.company-name-img {
+  min-width: 55%;
+  max-width: 65%;
+}
+
+/* Header: Introduction Styling */
+.introduction {
+  min-height: 35vh;
+}
+
+.header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7rem;
+  max-width: 40vw;
+  gap: 2rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: var(--font-sz-big);
+}
+
+.fixed-background-img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-menu {
+  background-image: url("../img/bridge_1.jpg");
+}
+.bg-story {
+  background-image: url("../img/bridge_2.jpg");
+}
+.bg-catering {
+  background-image: url("../img/bridge_3.jpg");
+}
+.bg-cakes {
+  background-image: url("../img/bridge_4.jpg");
+}
+
+/* Main: Artikel Styling */
+
+.artikel-container {
+  display: flex;
+  justify-content: center;
+}
+
+article .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  max-width: 40vw;
+  gap: 2rem;
+  width: 30%;
+  background-color: red;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast-icon {
+  height: var(--font-sz-secondary);
+}
+
+.daily-brews,
+.handmade-coffees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.brew-details,
+.coffee-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brew,
+.coffee {
+  text-align: center;
+  border: 0.075rem solid var(--clr-primary-bl);
+  padding: 1rem;
+  min-width: 100%;
+  flex-grow: 1;
+}
+
+.brew {
 }
