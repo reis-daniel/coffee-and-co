@@ -75,19 +75,19 @@ img {
 }
 .introduction.background-img {
   background-image: url("../img/beans_icon.png");
-  height: 100vh;
+  min-height: 100vh;
 }
 .menu.background-img {
   background-image: url("../img/cake_icon.png");
-  height: 100vh;
+  min-height: 100vh;
 }
 .catering.background-img {
   background-image: url("../img/pie_icon.png");
-  height: 100vh;
+  min-height: 100vh;
 }
 .cakes.background-img {
   background-image: url("../img/muffin_icon.png");
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Header: Navbar Styling */
@@ -253,7 +253,7 @@ article .content {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .story .content {
