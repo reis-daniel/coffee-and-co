@@ -4,10 +4,10 @@ let navbar = document.querySelector(".navbar");
 let navbarLinks = document.querySelectorAll("nav-link");
 
 // Change Background-Image when scrolling
-let menuArt = document.querySelector("article.menu");
-let storyArt = document.querySelector("article.story");
-let cateringArt = document.querySelector("article.catering");
-let cakesArt = document.querySelector("article.cakes");
+let menuArt = document.querySelector(".menuArt");
+let storyArt = document.querySelector(".storyArt");
+let cateringArt = document.querySelector(".cateringArt");
+let cakesArt = document.querySelector(".cakesArt");
 let menuPos = menuArt.getBoundingClientRect();
 let storyPos = storyArt.getBoundingClientRect();
 let cateringPos = cateringArt.getBoundingClientRect();
@@ -57,6 +57,11 @@ function functionStickyNavbar() {
 
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
+
+  if (scroll <= menuPos.top) {
+    bgImg.className = fixedClass;
+    bgImg.classList.add("bg-menu");
+  }
 
   //   Menü -> bg-story
   if (scroll >= menuPos.top) {
