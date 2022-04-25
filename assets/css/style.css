@@ -264,7 +264,7 @@ article .content {
 
 /* Main: Story Styling */
 
-.artikel-container.story {
+.storyArt {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -274,11 +274,11 @@ article .content {
 
 .story .content {
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 5rem;
-  width: 80%;
-  padding: 6rem 0;
+  width: 90%;
+  padding: 0;
 }
 
 .story-img {
@@ -291,7 +291,7 @@ article .content {
 
 /* Main: Catering Styling */
 
-.artikel-container.catering {
+.cateringArt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,8 +303,8 @@ article .content {
   align-items: flex-end;
   justify-content: center;
   gap: 5rem;
-  width: 60%;
-  padding: 6rem 0;
+  width: 90%;
+  padding: 0;
 }
 
 .catering-img {
@@ -317,7 +317,7 @@ article .content {
 
 /* Main: Cake Styling */
 
-.artikel-container.cakes {
+.cakesArt {
   display: flex;
   justify-content: center;
   align-items: center;
